@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg활용</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Black+Han+Sans&display=swap');
+
+    article {
+      width: 500px;
+      border: 1px solid #000;
+      box-sizing: border-box;
+      padding: 50px;
+      margin: auto;
+    }
+
+    article svg {
+      width: 100%;
+    }
+
+    /*path속성 바꾸기*/
+    article svg path {
+      fill: transparent;
+      /*면색*/
+      stroke: #ffb6c1;
+      /*선색*/
+      stroke-width: 10;
+      /*선의 두께*/
+      stroke-dasharray: 1700;
+      /*점선의 길이*/
+      stroke-dashoffset: -1700;
+      /*점선의 시작점 위치를 변경*/
+      transition: all 3s;
+      /*변환효과*/
+    }
+
+    article:hover svg path {
+      stroke-dashoffset: 0;
+    }
+    section svg text{
+      stroke-dasharray: 260;
+      stroke-dashoffset: -260;
+      transition: all 3s;
+    }
+    section:hover svg text{
+      stroke-dashoffset: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 522 522">
+      <!--!Font Awesome Free 5.15.4 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
+      <path
+        d="M472.29 195.89l-67.06-22.95c-19.28-6.6-33.54-20.92-38.14-38.3L351.1 74.19c-11.58-43.77-76.57-57.13-109.98-22.62l-46.14 47.67c-13.26 13.71-33.54 20.93-54.2 19.31l-71.88-5.62c-52.05-4.07-86.93 44.88-59.03 82.83l38.54 52.42c11.08 15.07 12.82 33.86 4.64 50.24L24.62 355.4c-20.59 41.25 22.84 84.87 73.49 73.81l69.96-15.28c20.11-4.39 41.45 0 57.07 11.73l54.32 40.83c39.32 29.56 101.04 7.57 104.45-37.22l4.7-61.86c1.35-17.79 12.8-33.86 30.63-42.99l62-31.74c44.88-22.96 39.59-80.17-8.95-96.79z" />
+      <?xml version="1.0" encoding="utf-8"?>
+      <!-- Generator: Adobe Illustrator 27.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+    </svg>
+  </article>
+  <section>
+    <svg version="1.1" baseProfile="basic" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 300" xml:space="preserve">
+      <style type="text/css">
+        .st0 {
+          fill: none;
+          stroke: #FFB6C1;
+          stroke-width: 3;
+        }
+
+        .st1 {
+          font-family: "Black Han Sans";
+        }
+
+        .st2 {
+          font-size: 70px;
+        }
+      </style>
+      <text transform="matrix(1 0 0 1 44.5824 176.6873)" class="st0 st1 st2">UI/UX 디자인 </text>
+    </svg>
+  </section>
+</body>
+
+</html>
